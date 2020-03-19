@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Projektarbeit_Client.JoinClass"
+             BackgroundImage="Background.png"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="Center">
+            <StackLayout Margin="40" >
+                <Image  Source="logo.png" VerticalOptions="Center" HeightRequest="240"/>
+                <Label HeightRequest="50" Text="Klasse Beitreten" TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" Margin="0,10,0,0" />
+                <Label  TextColor="Gray" FontSize="16" Text="Gebe hier bitte den Code ein den du in der Einladungs E-Mail Erhalten hast. Falls du keinen Code hast lass dich über deine Account E-Mail einladen." HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" Margin="0,10,0,0"/>
+                <Entry x:Name="txt_Code" Placeholder="Code" PlaceholderColor="Gray" VerticalOptions="Center" Keyboard="Numeric" Margin="0,10,0,0"/>
+               
+                <Grid Margin="0,20,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" TextColor="Orange" x:Name="btn_back" Text="Zurück" BackgroundColor="LightYellow"/>
+                <Button Grid.Column="1" TextColor="Orange" x:Name="btn_join" Text="Beitreten" BackgroundColor="LightYellow"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

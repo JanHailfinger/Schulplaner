@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projektarbeit_Client.LoginPage"
+             BackgroundImage="Background.png"
+             x:Name="page"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="Center">
+            <StackLayout Margin="40" Spacing="15" >
+                <Image x:Name="img_logo" Source="logo.png" VerticalOptions="Center" HeightRequest="240"/>
+                <Label x:Name="label_anmeldung" HeightRequest="50" Text="Anmeldung" TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" />
+                <Entry x:Name="txt_email" Placeholder="E-Mail" PlaceholderColor="Gray" VerticalOptions="Center" Keyboard="Email"/>
+                <Entry x:Name="txt_password" IsPassword="True" Placeholder="Passwort" PlaceholderColor="Gray" VerticalOptions="Center"/>
+                <Button HeightRequest="40" x:Name="btn_login" BackgroundColor="LightYellow" Text="Anmelden" TextColor="Orange" FontSize="15"/>
+                <Label  x:Name="btn_createaccount" Text="Du hast noch keinen Account ?" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label  x:Name="btn_forgotpassword" Text="Passwort vergessen ?" HorizontalOptions="Center" VerticalOptions="Center" Margin="10"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

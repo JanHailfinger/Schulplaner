@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Projektarbeit_Client.EditStundenplan"
+                          BackgroundImage="Background.png"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,20,20,20">
+
+                <Grid VerticalOptions="StartAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Grid.Column="0" Source="logo.png" HeightRequest="40"/>
+                    <Label Grid.Row="0" Grid.Column="1" TextColor="Gray" Text="Stundenplan Bearbeiten" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="22" Margin="20"/>
+                </Grid>
+
+                <ScrollView Orientation="Both" BackgroundColor="White" VerticalOptions="CenterAndExpand">
+                    <Grid BackgroundColor="Black" HorizontalOptions="Center" RowSpacing="2" ColumnSpacing="2" VerticalOptions="Center" Padding="2" x:Name="stundenplan">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Stunden-->
+
+                        <BoxView Grid.Column="0" Grid.Row="0" BackgroundColor="White" />
+                        <BoxView Grid.Column="0" Grid.Row="1" BackgroundColor="White" />
+
+                        <Label Grid.Column="0" Grid.Row="1" Text="1" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+                        <BoxView Grid.Column="0" Grid.Row="2" BackgroundColor="White" />
+                        <Label Grid.Column="0" Grid.Row="2" Text="2" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+                        <BoxView Grid.Column="0" Grid.Row="3" BackgroundColor="White" />
+                        <Label Grid.Column="0" Grid.Row="3" Text="3" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+                        <BoxView Grid.Column="0" Grid.Row="4" BackgroundColor="White" />
+                        <Label Grid.Column="0" Grid.Row="4" Text="4" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+                        <BoxView Grid.Column="0" Grid.Row="5" BackgroundColor="White" />
+                        <Label Grid.Column="0" Grid.Row="5" Text="5" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+                        <BoxView Grid.Column="0" Grid.Row="6" BackgroundColor="White" />
+                        <Label Grid.Column="0" Grid.Row="6" Text="6" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+                        <BoxView Grid.Column="0" Grid.Row="7" BackgroundColor="White" />
+                        <Label Grid.Column="0" Grid.Row="7" Text="7" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+                        <BoxView Grid.Column="0" Grid.Row="8" BackgroundColor="White" />
+                        <Label Grid.Column="0" Grid.Row="8" Text="8" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+                      
+
+                        <!--Montag-->
+
+                        <BoxView Grid.Column="1" Grid.Row="0" BackgroundColor="White" />
+                        <Label Grid.Column="1" Grid.Row="0" Text="Montag" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+
+                        <Entry MaxLength="14" x:Name="monday_1" Grid.Column="1" Grid.Row="1" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView  Grid.Column="1" Grid.Row="2" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="monday_2" Grid.Column="1" Grid.Row="2" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView  Grid.Column="1" Grid.Row="3" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="monday_3" Grid.Column="1" Grid.Row="3" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView  Grid.Column="1" Grid.Row="4" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="monday_4" Grid.Column="1" Grid.Row="4" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="1" Grid.Row="5" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="monday_5" Grid.Column="1" Grid.Row="5" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="1" Grid.Row="6" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="monday_6" Grid.Column="1" Grid.Row="6" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="1" Grid.Row="7" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="monday_7" Grid.Column="1" Grid.Row="7" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="1" Grid.Row="8" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="monday_8" Grid.Column="1" Grid.Row="8" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        
+                        <!--Dienstag-->
+
+                        <BoxView Grid.Column="2" Grid.Row="0" BackgroundColor="White" />
+                        <Label Grid.Column="2" Grid.Row="0" Text="Dienstag" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+
+                        <BoxView Grid.Column="2" Grid.Row="1" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="tuesday_1" Grid.Column="2" Grid.Row="1" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="2" Grid.Row="2" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="tuesday_2" Grid.Column="2" Grid.Row="2" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="2" Grid.Row="3" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="tuesday_3" Grid.Column="2" Grid.Row="3" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="2" Grid.Row="4" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="tuesday_4" Grid.Column="2" Grid.Row="4" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="2" Grid.Row="5" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="tuesday_5" Grid.Column="2" Grid.Row="5" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="2" Grid.Row="6" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="tuesday_6" Grid.Column="2" Grid.Row="6" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="2" Grid.Row="7" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="tuesday_7" Grid.Column="2" Grid.Row="7" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="2" Grid.Row="8" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="tuesday_8" Grid.Column="2" Grid.Row="8" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                      
+
+                        <!--Mittwoch-->
+
+                        <BoxView Grid.Column="3" Grid.Row="0" BackgroundColor="White" />
+                        <Label Grid.Column="3" Grid.Row="0" Text="Mittwoch" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+
+                        <BoxView Grid.Column="3" Grid.Row="1" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="wednesday_1" Grid.Column="3" Grid.Row="1" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="3" Grid.Row="2" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="wednesday_2" Grid.Column="3" Grid.Row="2" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="3" Grid.Row="3" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="wednesday_3" Grid.Column="3" Grid.Row="3" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="3" Grid.Row="4" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="wednesday_4" Grid.Column="3" Grid.Row="4" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="3" Grid.Row="5" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="wednesday_5" Grid.Column="3" Grid.Row="5" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="3" Grid.Row="6" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="wednesday_6" Grid.Column="3" Grid.Row="6" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="3" Grid.Row="7" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="wednesday_7" Grid.Column="3" Grid.Row="7" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="3" Grid.Row="8" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="wednesday_8" Grid.Column="3" Grid.Row="8" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                      
+
+                        <!--Donnerstag-->
+
+                        <BoxView Grid.Column="4" Grid.Row="0" BackgroundColor="White" />
+                        <Label Grid.Column="4" Grid.Row="0" Text="Donnerstag" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+
+                        <BoxView Grid.Column="4" Grid.Row="1" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="thursday_1" Grid.Column="4" Grid.Row="1" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="4" Grid.Row="2" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="thursday_2" Grid.Column="4" Grid.Row="2" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="4" Grid.Row="3" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="thursday_3" Grid.Column="4" Grid.Row="3" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="4" Grid.Row="4" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="thursday_4" Grid.Column="4" Grid.Row="4" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="4" Grid.Row="5" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="thursday_5" Grid.Column="4" Grid.Row="5" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="4" Grid.Row="6" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="thursday_6" Grid.Column="4" Grid.Row="6" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="4" Grid.Row="7" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="thursday_7" Grid.Column="4" Grid.Row="7" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="4" Grid.Row="8" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="thursday_8" Grid.Column="4" Grid.Row="8" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        
+                        <!--Freitag-->
+
+                        <BoxView Grid.Column="5" Grid.Row="0" BackgroundColor="White" />
+                        <Label Grid.Column="5" Grid.Row="0" Text="Freitag" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  BackgroundColor="White"/>
+
+                        <BoxView Grid.Column="5" Grid.Row="1" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="friday_1" Grid.Column="5" Grid.Row="1" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="5" Grid.Row="2" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="friday_2" Grid.Column="5" Grid.Row="2" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="5" Grid.Row="3" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="friday_3" Grid.Column="5" Grid.Row="3" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="5" Grid.Row="4" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="friday_4" Grid.Column="5" Grid.Row="4" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="5" Grid.Row="5" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="friday_5" Grid.Column="5" Grid.Row="5" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="5" Grid.Row="6" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="friday_6" Grid.Column="5" Grid.Row="6" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="5" Grid.Row="7" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="friday_7" Grid.Column="5" Grid.Row="7" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        <BoxView Grid.Column="5" Grid.Row="8" BackgroundColor="White" />
+                        <Entry MaxLength="14" x:Name="friday_8" Grid.Column="5" Grid.Row="8" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                        
+                    </Grid>
+
+                </ScrollView>
+
+                <Grid Margin="0,20,10,0" VerticalOptions="EndAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button Grid.Column="0" TextColor="Orange" x:Name="btn_back" Text="Zurück" BackgroundColor="LightYellow"/>
+                        <Button Grid.Column="1" TextColor="Orange" x:Name="btn_set" Text="Bestätigen" BackgroundColor="LightYellow"/>
+                    </Grid>
+
+                
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

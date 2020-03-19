@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projektarbeit_Client.JoinorCreateClassPage"
+             BackgroundImage="Background.png"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Margin="40" VerticalOptions="Fill" >
+            <Grid VerticalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Grid.Column="0" Source="logo.png" HeightRequest="50"/>
+                <Label Grid.Row="0" Grid.Column="1" TextColor="Gray" Text="Auswahl" HorizontalOptions="Center" FontAttributes="Bold" FontSize="30" Margin="20"/>
+            </Grid>
+
+            <Grid VerticalOptions="CenterAndExpand" RowSpacing="25" Margin="0,15,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button Text="Vorhandener Klasse Beitreten" x:Name="btn_join" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="LightYellow" HeightRequest="250" FontAttributes="Bold" FontSize="20" TextColor="DimGray" CornerRadius="20" BorderColor="#fdcb6e" BorderWidth="3" Opacity="0.9"/>
+                <Button Text="Neue Klasse Erstellen" x:Name="btn_create" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="LightYellow" HeightRequest="250" FontAttributes="Bold" FontSize="20" TextColor="DimGray" CornerRadius="20" BorderColor="#fdcb6e" BorderWidth="3" Opacity="0.9"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
